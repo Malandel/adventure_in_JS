@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<title>Adventures in JS</title>
+	<link rel="stylesheet" type="text/css" href="style-jdr.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+
+<header>
+	<div class="titre_entete">
+		<h1>Adventures in JS</h1>
+		<h2>Create your character</h2>
+	</div>
+		<nav class="navigation">
+			<ul>
+				<li><a href="index.html">Accueil</a></li>
+				<li><a href="realisations.html">Réalisations</a></li>
+				<li><a href="jdr.html">Adventure in JS</a></li>
+			</ul>
+		</nav>	
+</header>
+
+<main>
+
+	<h1>Create your character</h1>
+
+	<div class="formName">
+		<label>What's your Character's name ?</label>
+		<input id="chName" type="text" name="chName" placeholder="Please Enter Your Name" required>
+		<input id="okName"type="button" name="okName" value="Ok">
+	</div>
+	
+	<h2>Choose your City</h2>
+
+	<form id="city" required>
+		
+		<div class="techWorld">
+			<img src="https://i.pinimg.com/originals/c9/e9/8f/c9e98f0a05d00ad367ebc78d3f8324bb.jpg" alt="A steampunk city">
+  			<input type="radio" id="techCity" name="city" value="techCity">
+ 		</div>
+
+		<div class="castleWorld">
+			<img src="https://i.pinimg.com/originals/f1/23/2d/f1232daff431c29745261fb4d6e58f22.jpg" alt="A medieval town">
+  			<input type="radio" id="castleCity" name="city" value="castleCity">
+ 		</div>
+
+		<div class="forestWorld">
+			<img src="https://i.pinimg.com/originals/64/05/29/6405294007d50f23c3fe83342f4fde4d.jpg" alt="A forest city">
+  			<input type="radio" id="forestCity" name="city" value="forestCity">
+ 		</div>
+
+ 		<div class="magicWorld">
+			<img src="https://i.pinimg.com/originals/e0/2a/4e/e02a4e4db24e46fe4333b05cbf170f98.jpg" alt="A magic city">
+  			<input type="radio" id="magicCity" name="city" value="magicCity">
+ 		</div>
+	</form>
+
+	<div class="formName">
+ 		<label>What's the name of your City ?</label>
+		<input id="cityName" type="text" name="cityName" placeholder="Please Enter Your City's Name" required>
+		<input id="okCityName"type="button" name="enterCityName" value="Ok">
+	</div>
+
+	<h2>Choose your Race</h2>
+
+	<form id="race">
+		
+		<div class="human">
+			<label>Human</label>
+			<p>In the reckonings of most worlds, humans are the youngest of the common races, late to arrive on the world scene. Perhaps it is because of their shorter lives that they strive to achieve as much as they can in the years they are given.</br><strong> They are naturally good at being furtive.</strong></p>
+  			<input type="radio" id="human" name="race" value="human">
+ 		</div>
+
+		<div class="elf">
+			<label>Elf</label>
+			<p>Elves love discovery and poetry. They are slow to make friends and enemies, and even slower to forget them since they live longer than most races. They reply to petty insults with disdain and to serious insults with vengeance.</br><strong>They are naturally in touch with the magical world.</strong></p>
+  			<input type="radio" id="elf" name="race" value="elf">
+ 		</div>
+
+		<div class="orc">
+			<label>Orc</label>
+			<p>Orcs have poor temperaments and are given to anger more easily than some races. Easily offended and impatient, orcs generally prefer violent solutions and rarely consider multiple ways of approaching a problem.</br><strong>They are naturally muscular and physically strong.</strong></p>
+  			<input type="radio" id="orc" name="race" value="orc">
+ 		</div>
+
+ 		<div class="dwarf">
+			<label>Dwarf</label>
+			<p>Dwarves respect the traditions of their clans, tracing their ancestry back to the founding of their most ancient strongholds in the youth of the world, and do not abandon those traditions lightly.</br><strong> However, they are naturally attracted to new technologies.</strong></p>
+  			<input type="radio" id="dwarf" name="race" value="dwarf">
+ 		</div>
+	
+	</form>
+
+	<h2>Choose your Pet</h2>
+
+	<form id="pet">
+		
+		<div class="crow">
+			<label>Crow</label>
+			<img src="https://i.pinimg.com/originals/22/9c/d7/229cd71d58e1a28a3043c64e44cd523e.jpg" alt="A picture of a crow">
+  			<input type="radio" id="petCrow" name="pet" value="Crow">
+ 		</div>
+
+		<div class="bear">
+			<label>Bear</label>
+			<img src="https://i.pinimg.com/originals/a3/7e/df/a37edfa5e0870d1902e3a78e73c950d7.jpg" alt="A picture of a bear">
+  			<input type="radio" id="petBear" name="pet" value="Bear">
+ 		</div>
+
+		<div class="phoenix">
+			<label>Phoenix</label>
+			<img src="https://i.pinimg.com/originals/05/d0/33/05d03378da2901fec7464a37e6e0a255.jpg" alt="A phoenix">
+  			<input type="radio" id="petPhoenix" name="pet" value="Phoenix">
+ 		</div>
+
+ 		<div class="rat">
+ 			<label>Rat</label>
+			<img src="https://i.pinimg.com/originals/ef/8b/a7/ef8ba701883db733083e381b44c5a9a8.png" alt="A picture of a rat">
+  			<input type="radio" id="petRat" name="pet" value="Rat">
+ 		</div>
+	</form>
+
+	<div class="formName">
+ 		<label>What's the name of your Pet ?</label>
+		<input id="petName" type="text" name="petName" placeholder="Please Enter Your Pet's Name" required>
+		<input id="okPetName"type="button" name="enterPetName" value="Ok">
+	</div>
+
+	<h2>Choose your weapon</h2>
+
+	<form id="weapon">
+		
+		<div class="gauntlet-basic">
+			<label>Gauntlet</label>
+			<img src="https://i.pinimg.com/originals/87/c0/46/87c0466706bd7ae6d92cb42bdc6f0e6f.jpg" alt="A steampunk gauntlet">
+  			<input type="radio" id="gauntlet-basic" name="weapon" value="Gauntlet-basic">
+ 		</div>
+ 		
+
+		<div class="sword-basic">
+			<label>Sword</label>
+			<img src="https://i.pinimg.com/originals/30/9e/1a/309e1a75f468cd1cb611aec95518b43e.jpg" alt="A picture of a sword">
+  			<input type="radio" id="sword-basic" name="weapon" value="Sword-basic">
+ 		</div>
+
+		<div class="bow-basic">
+			<label>Bow</label>
+			<img src="https://i.pinimg.com/originals/b2/a2/1d/b2a21deedd26c99a6d01b6bf576c74ac.png" alt="A bow and arrow">
+  			<input type="radio" id="bow-basic" name="weapon" value="Bow-basic">
+ 		</div>
+
+ 		<div class="spellbook-basic">
+ 			<label>Spellbook</label>
+			<img src="https://i.pinimg.com/originals/26/a3/d2/26a3d210f69c2a0700b0b6491cae1939.jpg" alt="A spellbook">
+  			<input type="radio" id="spellbook-basic" name="weapon" value="Spellbook-basic">
+ 		</div>
+	</form>
+
+	<div class="reveal-if-active">
+		<h2>Choose a property</h2>
+		
+		<div class="gauntlet-choice">
+			<label for="gauntlet-select">Choose your gauntlet's property :</label>
+			<select name="gauntlet-choice" id="gauntlet-select" data-require-pair="#gauntlet-basic">
+    			<option value="default">--Please choose an option--</option>
+   				<option value="telekinesis">Telekinesis - allows you to move objects or people</option>
+   				<option value="strenght-buff">Strenght buff - grants you +1 strenght</option>
+    		</select>
+		</div>
+		<div class="sword-choice">
+			<label for="sword-select">Choose your sword's property :</label>
+			<select name="sword-choice" id="sword-select" data-require-pair="#sword-basic">
+    			<option value="default">--Please choose an option--</option>
+   				<option value="fire">Fire - hurt ennemies with fire damage</option>
+   				<option value="radar">Radar - glows when ennemies are nearby</option>
+    		</select>
+		</div>
+		<div class="bow-choice">
+			<label for="bow-select">Choose your bow's property :</label>
+			<select name="bow-choice" id="bow-select" data-require-pair="#bow-basic">
+    			<option value="default">--Please choose an option--</option>
+   				<option value="laser">Laser - allows you to fire laser arrows</option>
+   				<option value="stun">Stun - your arrows can stun your ennemies</option>
+    		</select>
+		</div>
+		<div class="spellbook-choice">
+			<label for="spellbook-select">Choose your spellbook's property :</label>
+			<select name="spellbook-choice" id="spellbook-select" data-require-pair="#spellbook-basic">
+    			<option value="default">--Please choose an option--</option>
+   				<option value="robots">Robots - allows you to control robots and mechas</option>
+   				<option value="invisibility">Invisibility - grants you invisibility</option>
+    		</select>
+		</div>
+	</div>
+
+	<div class="end-buttons">
+		<form method="post" action="stats-jdr.html">
+    		<button type="submit">Continue</button>
+		</form>
+		<form>
+			<input type="button" name="" value="Reset the form">
+		</form>
+	</div>
+
+</main>
+
+<footer>
+	
+</footer>
+
+<script src="jdr.js" type="text/javascript"></script>
+
+</body>
+
+</html>

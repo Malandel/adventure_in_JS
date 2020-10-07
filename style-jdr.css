@@ -1,0 +1,121 @@
+@font-face {
+    font-family: 'impact_labelregular';
+    src: url('Impact_Label-webfont.eot');
+    src: url('Impact_Label-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Impact_Label.woff2') format('woff2'),
+         url('Impact_Label.woff') format('woff'),
+         url('Impact_Label-webfont.ttf') format('truetype'),
+         url('Impact_Label-webfont.svg#impact_labelregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+body{
+	padding:0 20px 0 20px;
+	margin: 0;
+}
+header{
+	background-image: url("header2.png");
+	background-repeat: round;
+	color: white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding : 20px 20px 20px 20px;
+}
+.navigation li{
+	list-style-type: none;
+}
+.navigation a{
+	color : white;
+}
+.navigation a:hover{
+	font-weight: 800;
+	background-color: rgba(222, 114, 147, 0.6);
+	text-decoration: overline;
+}
+
+h1, h2{
+	font-family: 'Grenze Gotisch', cursive;
+	margin-top: 0;
+}
+h1{
+	font-size: 3em;
+}
+h2{
+	font-size: 2em;
+}
+
+form{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 30px;
+}
+form div{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+form img{
+	width: 300px;
+	height: 200px;
+	margin: 0 15px 20px 0;
+}
+form label{
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 20px;
+	font-family: "impact_labelregular", cursive;
+	font-size: 1.9em;
+}
+#race div{
+	text-align: justify;
+	font-size: 0.9em;
+	margin: 0 15px 0 15px;
+	width: 25%;
+}
+.formName{
+	margin-bottom: 30px;
+}
+#weapon img{
+	width: 200px;
+	height: 300px;
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+}
+#weapon div{
+	width: 30%;
+	text-align: center;
+}
+.end-buttons{
+	display: flex;
+	justify-content: center;
+}
+.end-buttons form{
+	margin-right: 20px;
+}
+
+
+
+
+
+
+/*TO FIX - HIDE SELECT WEAPONS */
+.reveal-if-active {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  font-size: 16px;
+  transform: scale(0.8);
+  transition: 0.5s;
+
+input[type="radio"]:checked ~&{
+    opacity: 1;
+    max-height: 100px;
+    padding: 10px 20px;
+    transform: scale(1);
+    overflow: visible;
+  }
+}
+
