@@ -124,9 +124,9 @@ function validateWeapon() {
 }
 
 //SHOW STATS - I have to create div to show results
-function afficherTech(sumTech){
+function afficherTech(techPoints){
   console.log(techPoints);
-  document.getElementById("techResult").innerHTML=sumTech;
+  document.getElementById("techResult").innerHTML=techPoints;
 }
 function afficherStr(sumStr){
   console.log(strenghtPoints);
@@ -142,7 +142,7 @@ function afficherTech(sumMag){
 }
 
 
-//SHOW NAME - EVENT "Continue" Button - need to link the other page
+//SHOW NAME - EVENT "Submit" Button in #name-character div
 let sumName = document.getElementById(chName).value
 function afficherName(sumName){
   console.log(sumName);
