@@ -96,6 +96,25 @@ form label{
 }
 
 
+footer{
+	background-image: url("header2.png");
+	background-size: cover;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding : 20px 100px 20px 100px;
+}
+footer img{
+	width: 40px;
+	height: 40px;
+	margin-right: 30px;
+}
+
+.github{
+	width: 45px;
+	height: 45px;
+}
 
 
 
